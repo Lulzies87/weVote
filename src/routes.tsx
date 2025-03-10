@@ -31,5 +31,8 @@ export const router = createBrowserRouter([
     ],
   },
   { path: "/login", element: <LoginPage />, loader: loginLoader },
-  // { path: "*", element: <NotFoundPage /> },
-]);
+  { path: "*", element: <NotFoundPage /> },
+],
+{
+  basename: "/weVote"
+});
